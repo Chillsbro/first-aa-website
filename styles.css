@@ -1,8 +1,35 @@
-.visuallyhidden{
-    visibility:hidden;
-    
+.visuallyhidden {
+  visibility: hidden;
 }
-#sitelogo h1{
-    margin:0px;
-    padding:0px;
+#sitelogo h1 {
+  margin: 0px;
+  padding: 0px;
+}
+.menu-container{
+    display:flex;
+}
+
+h2 {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+  font-size: 50px;
+}
+p {
+  font-family: "Cinzel", serif;
+  text-shadow: px 2px black;
+  font-size: 25px;
+}
+.flavors-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+}
+.flavors {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.flavors-bottom {
+  display: flex;
+  justify-content: center;
 }
