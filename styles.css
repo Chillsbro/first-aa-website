@@ -5,19 +5,70 @@
   margin: 0px;
   padding: 0px;
 }
-.menu-container{
-    display:flex;
+body {
+  height: 125vh;
+  background-size: cover;
+  background-color: #efe6dd;
+  font-family: sans-serif;
+  margin-top: 80px;
+  padding: 30px;
+}
+#nrg-can {
+  width: 500px;
+  height: 250px;
+  float: right;
+}
+.menu-container {
+  display: flex;
+  background-color: rgb(105, 187, 169);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  width: 2160px;
 }
 
-h2 {
+#menu-main-nav-menu li {
+  display: inline;
+  justify-content: space-between;
+  margin: 300px;
+  text-decoration: none;
+}
+#menu-main-nav-menu a {
+  text-decoration: none;
+  font-family: "Bebas Neue", cursive;
+  color: whitesmoke;
+  font-size: 40px;
+}
+
+h1,
+h2,
+h3 {
   font-family: "Bebas Neue", cursive;
   letter-spacing: 3px;
   font-size: 50px;
 }
 p {
   font-family: "Cinzel", serif;
-  text-shadow: px 2px black;
   font-size: 25px;
+}
+.faqs-attributes-list li {
+  font-family: "Alegreya Sans SC", sans-serif;
+  content: "✓";
+  font-size: 25px;
+  font-weight: bold;
+}
+.faqs-ingredients-links-container a {
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #2a2f5f;
+}
+.faqs-ingredients-links-container a:hover {
+  opacity: 75%;
+  color: #7d84b2;
 }
 .flavors-wrapper {
   display: grid;
@@ -32,4 +83,126 @@ p {
 .flavors-bottom {
   display: flex;
   justify-content: center;
+}
+#home-page-zip-code-submit-btn {
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+  background-color: grey;
+  width: 150px;
+  color: black;
+  border-radius: 10%;
+  border-color: whitesmoke;
+}
+#home-page-zip-code-submit-btn :hover {
+  opacity: 90%;
+}
+#home-page-zip-code {
+  width: 100px;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height:500px;
+}
+.FL label {
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  padding-inline: 5px;
+  letter-spacing:1px;
+}
+.contact-us-sign-up-container label {
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  
+  
+}
+.contact-us-comment-container label{
+    font-family: "Bebas Neue", cursive;
+    font-size: 20px;
+    display:block;
+
+}
+.contact-us-comment-container textarea{
+    width:473px;
+    height:75px;
+}
+#contact-us-submit-btn{
+    font-family: "Cinzel", serif;
+  font-weight: bold;
+  background-color: grey;
+  width: 150px;
+  color: black;
+  border-radius: 10%;
+  border-color: whitesmoke;
+}
+
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
